@@ -1,0 +1,44 @@
+:root {
+  --bg: #f7f1e5;
+  --paper: #fffdf8;
+  --ink: #1e1e1e;
+  --soft: #5e5850;
+  --navy: #1d4f91;
+  --orange: #e26d2e;
+  --line: #d9cdb6;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 18px/1.6 "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+h1, h2 { color: var(--navy); line-height: 1.2; }
+h1 { font-size: 2.2rem; margin: 8px 0; }
+h2 { font-size: 1.35rem; margin-top: 2rem; }
+a { color: var(--navy); font-weight: 700; }
+.muted { color: var(--soft); }
+.hero { text-align: center; padding: 24px 0 8px; }
+.hero img { width: 160px; height: 160px; border-radius: 36px; }
+.kicker { color: var(--orange); font-size: 1.8rem; font-weight: 800; margin: 16px 0 0; }
+.title { color: var(--navy); font-size: 2.6rem; font-weight: 900; margin: 0; letter-spacing: 1px; }
+.card {
+  background: var(--paper);
+  border: 1.5px solid var(--line);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 18px 0;
+}
+.stores { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 20px 0; }
+.btn {
+  display: inline-block;
+  background: var(--orange);
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 14px;
+}
+.btn.navy { background: var(--navy); }
+footer { color: var(--soft); text-align: center; font-size: 0.95rem; margin-top: 40px; }
